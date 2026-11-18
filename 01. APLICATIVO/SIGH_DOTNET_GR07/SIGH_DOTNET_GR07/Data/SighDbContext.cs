@@ -27,6 +27,8 @@ public class SighDbContext(DbContextOptions<SighDbContext> options) : DbContext(
     // Subsistema de Personal
     public DbSet<Departamento> Departamentos => Set<Departamento>();
     public DbSet<Cargo> Cargos => Set<Cargo>();
+    public DbSet<Genero> Generos => Set<Genero>();
+    public DbSet<EstadoCivil> EstadosCiviles => Set<EstadoCivil>();
 
     protected override void OnModelCreating(ModelBuilder modelBuilder)
     {

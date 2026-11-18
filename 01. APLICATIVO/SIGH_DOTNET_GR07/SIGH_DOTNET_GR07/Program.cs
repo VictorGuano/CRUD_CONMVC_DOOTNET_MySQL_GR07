@@ -32,6 +32,7 @@ builder.Services.AddScoped<PerfilServicio>();
 builder.Services.AddScoped<RecuperacionPasswordServicio>();
 builder.Services.AddScoped<DepartamentoServicio>();
 builder.Services.AddScoped<CargoServicio>();
+builder.Services.AddScoped<EmpleadoServicio>();
 builder.Services.AddSingleton<RegistroSesiones>();
 builder.Services.AddHostedService<CierreSesionesServicio>();
 

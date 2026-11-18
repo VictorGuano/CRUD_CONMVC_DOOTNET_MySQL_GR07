@@ -24,6 +24,7 @@ public class MenuServicio(SighDbContext db)
     {
         ["P001"] = "bi-building",
         ["P002"] = "bi-briefcase",
+        ["P003"] = "bi-person-vcard",
         ["S001"] = "bi-people",
         ["S002"] = "bi-diagram-3",
         ["S003"] = "bi-journal-text"

@@ -94,3 +94,17 @@ public record CargoDto(string CodigoCargo, string Descripcion, string CodigoDepa
 
 /// <summary>Datos que envía el formulario de cargo.</summary>
 public record CargoFormDto(string? CodigoCargo, string? Descripcion, string? CodigoDepartamento);
+
+/// <summary>Elemento de un combo (género, estado civil).</summary>
+public record CatalogoDto(string Codigo, string Descripcion);
+
+/// <summary>Empleado completo para la tabla y el formulario de Mantenimiento de empleados (P003).</summary>
+public record EmpleadoFichaDto(string CodigoEmpleado, string Cedula, string Apellidos, string Nombres,
+    string FechaNacimiento, string CodigoGenero, string Genero, string? CodigoEstadoCivil, string EstadoCivil,
+    string? RegistroProfesional, string Estado, string CodigoDepartamento, string Departamento,
+    string CodigoCargo, string Cargo, string? Direccion, string? Telefono, string Email, bool TieneUsuario);
+
+/// <summary>Datos que envía el formulario de Mantenimiento de empleados (las reglas se validan en el servicio).</summary>
+public record EmpleadoFormDto(string? Cedula, string? Apellidos, string? Nombres, string? FechaNacimiento,
+    string? CodigoGenero, string? CodigoEstadoCivil, string? RegistroProfesional, string? Estado,
+    string? CodigoDepartamento, string? CodigoCargo, string? Direccion, string? Telefono, string? Email);
